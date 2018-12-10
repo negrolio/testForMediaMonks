@@ -1,0 +1,247 @@
+
+@font-face {
+  font-family: "klavika-regular";
+  src: url("./font/klavika-regular-webfont.woff");
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  font-family: "klavika-regular";
+}
+.container-home {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0%;
+  background-image: url("./img/background.jpg");
+  background-size: 612% 100%;
+  background-repeat: no-repeat;
+  transition-property: background-position, right;
+  transition-duration: 1s, 1s;
+}
+
+.container-home-end {
+  right: 69%;
+}
+
+.info {
+  position: absolute;
+  height: 100%;
+  width: 69%;
+  left: 100%;
+  color: white;
+  background-color: #101010;
+  text-align: right;
+  transition-property: left;
+  transition-duration: 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.info-show {
+  left: 31%;
+}
+
+.info-text {
+  margin-top: 26%;
+  margin-right: 2%;
+  font-size: 0.7em;
+}
+
+.position0 {
+  background-position-x: 0;
+}
+.position1 {
+  background-position-x: 14%;
+}
+.position2 {
+  background-position-x: 23%;
+}
+.position3 {
+  background-position-x: 37%;
+}
+.position4 {
+  background-position-x: 51%;
+}
+.position5 {
+  background-position-x: 65%;
+}
+.position6 {
+  background-position-x: 80%;
+}
+.position7 {
+  background-position-x: 100%;
+}
+.position8 {
+  background-position-x: 100%;
+}
+.position9 {
+  background-position-x: 100%;
+}
+
+.title {
+  font-size: 3em;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  text-decoration: underline;
+}
+
+.text {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+}
+.txt-current-active {
+  opacity: 1;
+}
+
+.text0 .title {
+  left: 2%;
+  top: 2%;
+}
+.text0 .little-text {
+  left: 2%;
+  bottom: 10%;
+}
+
+.text1 .title,
+.text2 .title,
+.text6 .title,
+.text7 .title,
+.text8 .title {
+  left: 6%;
+  top: 48%;
+}
+
+.text3 .title,
+.text4 .title {
+  right: 6%;
+  top: 48%;
+  text-align: right;
+}
+
+.text5 .title {
+  right: 6%;
+  top: 38%;
+  text-align: right;
+}
+
+.little-text {
+  left: 17%;
+  bottom: 5%;
+}
+
+p {
+  margin: 0;
+}
+
+.little-text {
+  color: white;
+  position: absolute;
+  font-size: 0.6em;
+}
+
+
+.buttons-container {
+  color: white;
+  display: flex;
+  position: fixed;
+  border-style: dotted;
+  bottom: 4%;
+  left: 2%;
+  width: 13vw;
+  font-size: 0.8em;
+}
+.buttons-container:hover{
+  cursor: pointer;
+}
+
+.btn {
+  margin: 1%;
+  width: 8%;
+  text-align: center;
+}
+
+.btn:not(:last-child){
+  border-right-style: dotted;
+}
+
+.btn-current-active {
+  background-color: white;
+}
+
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+  position: absolute;
+  width: 96%;
+  z-index: 1;
+  top: 50%;
+}
+
+.arrows img {
+  width: 70%
+}
+
+.arrows img:hover{
+  cursor: pointer;
+}
+
+#left-arrow {
+  visibility: hidden;
+}
+
+.social {
+  display: inline-flex;
+  width: 30%;
+  margin-top: 2%;
+  margin-right: -3.5%;
+}
+.social p {
+  margin-left: 8%;
+}
+.mail-logo,
+.face-logo,
+.twitter-logo {
+  width: 20%;
+}
+
+.monk-logo img,
+.mail-logo img,
+.face-logo img,
+.twitter-logo img {
+  filter: invert(100%);
+  width: 100%;
+}
+
+.mail-info,
+.face-info,
+.twitter-info {
+  display: inline-flex
+}
+
+.monk-logo {
+  width: 5%;
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  opacity: 0.6;
+  margin-right: 2%;
+}
+
+.title-info {
+  position: initial;
+  margin: 2%;
+}
