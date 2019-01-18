@@ -1,6 +1,6 @@
 @font-face {
   font-family: "klavika-regular";
-  src: url("./font/klavika-regular-webfont.woff");
+  src: url("./../font/klavika-regular-webfont.woff");
 }
 
 :root {
